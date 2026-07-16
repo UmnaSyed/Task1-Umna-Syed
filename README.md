@@ -1,5 +1,6 @@
 **Interactive Calculator**
-A responsive, colorful calculator built with vanilla HTML, CSS, and JavaScript — no frameworks or libraries required.
+
+A responsive, colorful calculator built with vanilla HTML, CSS, and JavaScript, no frameworks or libraries required.
 
 **Features**
 Standard operations: addition, subtraction, multiplication, division, and percentage
@@ -7,7 +8,7 @@ Live expression preview above the main result
 Full keyboard support (numbers, + - * /, Enter/=, Backspace, Esc)
 Input validation to prevent invalid expressions from crashing the calculator
 Smooth animated gradient background with a frosted-glass calculator body
-Fully responsive — works on mobile and desktop screen sizes
+Fully responsive, works on mobile and desktop screen sizes
 
 **Tech Stack**
 HTML — structure and button layout
