@@ -17,8 +17,11 @@ JavaScript — expression handling, safe evaluation, and keyboard event listener
 
 **Project Structure**
 calculator/
+
 ├── index.html   # Markup and button layout
+
 ├── style.css    # Styling, colors, animations, responsive rules
+
 └── script.js    # Calculator logic and event handling
 
 **How to Run**
