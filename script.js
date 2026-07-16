@@ -17,11 +17,9 @@ function updateDisplay() {
 }
 
 function safeEvaluate(expr) {
-  // Only allow digits, operators, decimal points, percent, and parentheses
   if (!/^[0-9+\-*/.%\s]*$/.test(expr)) return null;
 
   try {
-    // Convert percentage (e.g. 50%) into (50/100)
     const withPercent = expr.replace(/(\d+(\.\d+)?)%/g, '($1/100)');
     const value = Function(`"use strict"; return (${withPercent})`)();
     return Number.isFinite(value) ? value : null;
@@ -38,7 +36,6 @@ function formatNumber(num) {
 }
 
 function handleNumber(value) {
-  // Prevent multiple decimal points in the current number segment
   const lastSegment = expression.split(/[\+\-\*\/]/).pop();
   if (value === '.' && lastSegment.includes('.')) return;
   expression += value;
@@ -88,7 +85,6 @@ buttons.forEach(button => {
   });
 });
 
-// Keyboard support
 document.addEventListener('keydown', (e) => {
   if (/^[0-9.]$/.test(e.key)) {
     handleNumber(e.key);
